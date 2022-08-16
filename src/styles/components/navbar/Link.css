@@ -1,0 +1,17 @@
+.Links {
+    font-size: 18px;
+    list-style: none;
+    display: flex;
+    gap: 46px;
+    flex-wrap: wrap;
+    cursor: pointer;
+  }
+
+  .first{
+    color: #337102;
+    font-weight: bold;
+  }
+  
+  .Links:focus{
+    color: #337102;
+  }
