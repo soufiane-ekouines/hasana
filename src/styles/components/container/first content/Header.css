@@ -1,8 +1,82 @@
 .container {
-    width: 100%;
-    height: 450px;
-    background-color: #ECF4E6;
-    margin: auto;
-    position: absolute;
-    left: 0;
-  }
+  width: 100%;
+  height: 450px;
+  background-color: #ECF4E6;
+  margin: auto;
+  position: absolute;
+  left: 0;
+}
+
+.content {
+  display: flex;
+  width: 80%;
+  margin: 24px auto;
+}
+
+.cnt {
+  width: 80%;
+}
+
+img {
+  height: 353px;
+}
+
+.content h1 {
+  font-size: 44px;
+}
+
+.content p {
+  font-size: 17px;
+  letter-spacing: 1px;
+  margin-top: 45px;
+}
+
+.buttons {
+  display: flex;
+  gap: 40px;
+  margin-top: 60px;
+}
+
+.buttons button {
+  padding: 10px 25px;
+  font-weight: bold;
+  border: none;
+  border-radius: 12px;
+  font-size: 14px;
+}
+
+.read {
+  background-color: #76C23A;
+  color: white;
+  border: 1px solid #76C23A !important;
+  cursor: pointer;
+  position: relative;
+
+}
+.read:hover {
+  transition: .3s;
+  animation-name: button_hover;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+.audio {
+  background-color: transparent;
+  border: 1px solid black !important;
+  cursor: pointer;
+  position: relative;
+}
+.audio:hover {
+  transition: .3s;
+  animation-name: button_hover;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+/* animation */
+@keyframes button_hover {
+  
+  0%   { background-color: #76C23A; color:white;top:0px;}
+  50%  { background-color: transparent;color:black;top:-20px;}
+  100% { background-color: #76C23A; color:white;top:0px;}
+}
